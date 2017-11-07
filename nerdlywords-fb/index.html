@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+	<title>Nerdly Words - Play Word Game on Facebook | Rad Razor Games</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="description" content="Play Nerdly Words on Facebook! Make words, Play with Friends, No Ads! Simple and super-smooth word game. Play now - Free!" /> 
+    <meta property="fb:app_id" content="1243164015811882" />
+	<meta property="og:type" content="game" />
+  	<meta property="og:url" content="http://www.radrazorgames.com/f-fb/poly-share-full.html" />
+  	<meta property="og:type" content="website" />
+  	<meta property="og:title" content="Nerdly Words" />
+  	<meta property="og:description" content="Say hello to Nerdly Words! The word game that treats you like a good friend. All-new crossword game re-imagined from the ground up!" />
+  	<meta property="og:image" content="http://www.radrazorgames.com/games/polyanagrams_game_crossword_word_games_fun_s.png" />
+  	<meta property="og:image:alt" content="Nerdly Words - The Smart Word Game | Rad Razor Games" />
+    <style>
+	.webgl-content * {border: 0; margin: 0; padding: 0}
+	.webgl-content {position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+	.webgl-content .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+	.webgl-content .logo {background: url('TemplateData/nerdly-words-word-game-play-online.png') no-repeat center / contain; width: 600px; height: 600px;}
+	.webgl-content .logo.Dark {background-image: url('TemplateData/nerdly-words-word-game-play-online.png');}
+	</style>
+	<link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Live WebGL.json", {onProgress: UnityProgress});
+    </script>
+    <script>
+	function FinishWebLoad(arg) {
+    	document.getElementById("loadLogo").style.display = "none";
+	}
+	</script>
+  </head>
+  <body style="background-color: white">
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 600px; height: 600px; margin:0 auto;"></div>
+      <div id="loadLogo" class="logo Dark"></div>
+    </div>
+  </body>
+</html>
